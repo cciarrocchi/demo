@@ -1,0 +1,237 @@
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #242021;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+hr {
+	clear:both; 
+	visibility:hidden;
+	margin:0;
+	padding:0;
+	height:0;
+	border:0;
+}
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+	text-align:left;
+	margin-top:15px;
+	font-size:13px;
+}
+ul li {	list-style:none; margin:8px 0;}
+li:before{content:"• ";color: red;}
+.content ul, .content ol {	padding: 0 15px 15px 0px; border-top:1px solid #383435; }
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;	 
+	padding: 0;
+	text-align:left;
+}
+h1{ font-size:28px; font-weight:normal; text-transform:uppercase; padding-top:35px;}
+h1 span { font-size:15px; text-transform:none; display:block; font-weight:bold;}
+h2{ font-size:24px; font-weight:normal; text-align:left;width:900px; margin:0 auto; padding:12px 0; text-align:left; color:#FFF;}
+h3{ font-size:18px; font-weight:normal; text-align: center; font-style:italic; color:#ffffff; margin:25px 0;}
+
+sup { font-size:0.5em; line-height:50%;  }
+
+a img { 
+	border: none;
+}
+a:link {
+	color: #414958;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+.header {
+	background-color: #000000;
+	color:#FFF;
+	text-align:left;
+	height:70px;
+	border-bottom:1px solid #333333;
+}
+.container {
+	width:100%;
+	margin: 0 auto; padding: 0;
+	/*background-color: #f9f9f9;*/
+	clear:both;
+}
+
+#intro { background:#231f20 url(images/CATCH.jpg) top center no-repeat;  height:255px; text-align:left;}
+#formulaire { background-color:#FFFFFF; color:#333;}
+#produits {  height:100px; text-align:center; /*background:#f9f9f9 url(images/fond_produits.jpg) top center no-repeat;*/}
+
+#formulaire .form { 
+	float:left; width:650px;
+}
+#formulaire .form .col { 
+	float:left; width:50%;
+	margin:10px 0;
+}
+#formulaire .form hr.visible { visibility:visible; height:1px; background-color:#e5e5e5;} 
+#formulaire .form .col p { text-align:left; line-height:38px; }
+#formulaire .form .col p label { font-size:16px; display:inline-block; width:110px; text-align:right; }
+#formulaire .form .col p sup { color:#dd052b; margin:0; padding:0; margin-right:3px; line-height:10px;  }
+#formulaire .form .col p.oblig { text-align:right; font-size:11px; margin-right:20px; color:#666; }
+
+input, textarea , select {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding:5px;
+	border-radius:5px;
+	border:1px solid #999999;
+}
+select{	padding:3px; }
+
+.red {color:#d00000;}
+
+#formulaire .sidebar {
+	float: right;
+	width: 250px;
+	/*height:450px;*/
+	padding:0;
+	margin:0;
+	/*background:#FFFFFF url(images/Fond_Brochure.jpg) top center repeat-x;*/
+}
+#formulaire .sidebar img {
+	padding:0;
+	margin:25px auto 0;
+}
+#formulaire a.cta {
+	/*display:block;
+	padding:20px 10px;
+	margin:0px 0 0;
+	text-align:center;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-size:18px;
+	text-shadow: 0px 1px 2px #666666;
+	filter: dropshadow(color=#666666, offx=0, offy=1);
+	
+	border-radius:8px;
+	border:2px solid #ff6800;
+	background: #ff7e00;
+	background: -moz-linear-gradient(top,  #ff7e00 0%, #ff5400 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7e00), color-stop(100%,#ff5400));
+	background: -webkit-linear-gradient(top,  #ff7e00 0%,#ff5400 100%);
+	background: -o-linear-gradient(top,  #ff7e00 0%,#ff5400 100%);
+	background: -ms-linear-gradient(top,  #ff7e00 0%,#ff5400 100%);
+	background: linear-gradient(to bottom,  #ff7e00 0%,#ff5400 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7e00', endColorstr='#ff5400',GradientType=0 );
+	*/
+}
+a.cta {
+	-moz-box-shadow:inset 0px 1px 0px 0px #dc5161;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #dc5161;
+	box-shadow:inset 0px 1px 0px 0px #dc5161;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cb0018), color-stop(1, #980012) );
+	background:-moz-linear-gradient( center top, #cb0018 5%, #980012 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb0018', endColorstr='#980012');
+	background-color:#cb0018;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:2px solid #cb0018;
+	display:inline-block;
+	padding:15px 10px;
+	margin:0;
+	width:100%;
+	
+	color:#ffffff;
+	font-family:arial;
+	font-size:20px;
+	font-weight:bold;
+	font-style:normal;
+
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #0f0e0f;
+}
+a.cta:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #980012), color-stop(1, #cb0018) );
+	background:-moz-linear-gradient( center top, #980012 5%, #cb0018 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#980012', endColorstr='#cb0018');
+	background-color:#980012;
+}
+a.cta:active {
+	position:relative;
+	top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.content {
+	padding:0;
+	margin:0 auto;
+	width:900px;
+}
+.footer {
+	padding: 10px 0;
+	background-color: #000000;
+	position: relative;
+	clear: both; 
+	color:#666666;
+	font-size:11px;
+	border-top:1px solid #333333;
+}
+.footer p{text-align:center;}
+
+
+.errore{
+	border:1px solid red !important;
+}
+
+.bordo{
+	border:1px solid #dd052b;
+	border-radius:5px 5px 5px;
+	margin-top:20px;
+	width:600px;
+	padding-bottom:10px;
+	position:relative;
+}
+
+.bordo_title{
+	background-color:#fff;
+	padding:2px;
+	position:absolute;
+	top:-12px;
+	left:10px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.rdv_form{
+	margin-top:15px;
+	margin-left:15px;
+}
+
+.rdv_form td{
+	padding:3px;
+}
+
+.projet_div{
+	padding:5px;
+	padding-top:15px;
+	margin:auto;
+	width:400px;
+}
+
+.projet_txt{
+	width:400px;
+	height:200px;
+}
